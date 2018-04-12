@@ -9,10 +9,6 @@ ubuntu-17.10
 
 ### Install and Config
    
-    sudo wget https://github.com/JackEHolmes/hive_install/raw/master/local_mysql/server/java.sh -P /etc/profile.d/  
-    sudo wget https://github.com/JackEHolmes/hive_install/raw/master/local_mysql/server/hadoop.sh -P /etc/profile.d/  
-    sudo wget https://github.com/JackEHolmes/hive_install/raw/master/local_mysql/server/hive.sh -P /etc/profile.d/  
-    
     wget https://github.com/JackEHolmes/hive_install/raw/master/jdk-hadoop-hive.sh  
     chmod +x jdk-hadoop-hive.sh  
     sudo ./jdk-hadoop-hive.sh  
