@@ -20,18 +20,21 @@ ubuntu-17.10
     wget https://github.com/JackEHolmes/hive_install/raw/master/local_mysql/server/local_mysql_server.sh  
     chmod +x local_mysql_server.sh  
     sudo ./local_mysql_server.sh  
-    <br/> <br\>
-
+  
+  
 * * *
+
 ### Update env
    
     source /etc/profile.d/java.sh  
     source /etc/profile.d/hadoop.sh  
     source /etc/profile.d/hive.sh  
-    
+     
+
+* * *
 ### Remove
      
     wget https://github.com/JackEHolmes/hive_install/raw/master/uninstall.sh  
     chmod +x uninstall.sh  
     sudo ./uninstall.sh   
-    <br />
+      
