@@ -1,10 +1,17 @@
+cd
+if [ -d "hive" ]; then
+echo "hive  exists"
+else
+mkdir hive
+fi
+cd hive
+
 #jdk-1.8.0_162
 export JAVA_HOME=/usr/java/jdk-1.8.0
 mv jdk-8u*tar.gz* jdk-1.8.0.tar.gz
 if [ -f "jdk-1.8.0.tar.gz" ]; then
 echo "jdk-*.tar.gz  exists"
 else
-#echo "jdk-1.8.0.tar.gz  not exists"
 wget http://download.oracle.com/otn-pub/java/jdk/8u162-b12/0da788060d494f5095bf8624735fa2f1/jdk-8u162-linux-x64.tar.gz?AuthParam=1523417791_53e56f80fc6d4f81eee8aee67c4ddb01
 fi
 if [ -d "/usr/java" ]; then 
