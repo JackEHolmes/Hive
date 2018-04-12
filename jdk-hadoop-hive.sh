@@ -1,3 +1,4 @@
+sudo cat /proc/version
 cd ~
 if [ -d "hive" ]; then
 echo "hive  exists"
