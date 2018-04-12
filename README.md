@@ -7,7 +7,6 @@ ubuntu-17.10
 
 * * *
 
-
 ### Install and Config
 
     wget https://github.com/JackEHolmes/hive_install/raw/master/jdk-hadoop-hive.sh  
@@ -17,5 +16,13 @@ ubuntu-17.10
     wget https://github.com/JackEHolmes/hive_install/raw/master/local_mysql/server/local_mysql_server.sh  
     chmod +x local_mysql_server.sh  
     ./local_mysql_server.sh  
+        
+  
+* * *
+
+### Remove
      
+    wget https://github.com/JackEHolmes/hive_install/raw/master/uninstall.sh  
+    chmod +x uninstall.sh  
+    ./uninstall.sh   
      
