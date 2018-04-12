@@ -1,6 +1,4 @@
-sudo su $USER
-cd
-cd
+cd ~
 if [ -d "hive" ]; then
 echo "hive  exists"
 else
