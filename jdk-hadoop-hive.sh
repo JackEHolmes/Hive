@@ -15,11 +15,10 @@ echo "export PATH=\${HADOOP_HOME}/bin:\${HADOOP_HOME}/sbin:\$PATH" >> hadoop.sh
 echo "export HADOOP_CLASSPATH=.:\$CLASSPATH:\$HADOOP_CLASSPATH:\$HADOOP_HOME/lib:\$HADOOP_HOME/bin" >> hadoop.sh
 sudo mv hadoop.sh /etc/profile.d/
 
-sleep 1
-source /etc/profile.d/java.sh
-source /etc/profile.d/hadoop.sh
-source /etc/profile.d/hive.sh
-sleep 1
+sudo source /etc/profile.d/java.sh
+sudo source /etc/profile.d/hadoop.sh
+sudo source /etc/profile.d/hive.sh
+source /etc/profile.d
 mv jdk-8u*tar.gz* jdk-1.8.0.tar.gz
 if [ -f "jdk-1.8.0.tar.gz" ]; then
 echo "jdk-*.tar.gz  exists"
