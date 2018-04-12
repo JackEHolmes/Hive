@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<property>
+  <name>hive.metastore.uris</name>
+  <value>thrift://server_ip:9083</value>
+  <description>IP address (or fully-qualified domain name) and port of the metastore host</description>
+</property>
+
+<property>
+ <name>hive.metastore.warehouse.dir</name>
+ <value>/usr/hive/warehouse</value>
+</property>
+
+<property>
+ <name>hive.exec.scratchdir</name>
+ <value>/usr/hive/tmp</value>
+</property>
+
+<property>
+ <name>hive.querylog.location</name>
+ <value>/usr/hive/log</value>
+</property>
+
+</configuration>

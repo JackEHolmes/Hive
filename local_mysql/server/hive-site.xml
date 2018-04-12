@@ -2,10 +2,6 @@
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 
 <configuration>
-<property>
-  <name>hive.metastore.warehouse.dir</name>
-  <value>/user/hive/warehouse</value>
-</property>
 
 <property>
   <name>javax.jdo.option.ConnectionURL</name>
@@ -26,5 +22,20 @@
   <name>javax.jdo.option.ConnectionPassword</name>
   <value>1234</value>
 </property>
-  
+
+<property>
+  <name>hive.metastore.warehouse.dir</name>
+  <value>/usr/hive/warehouse</value>
+</property>
+
+<property>
+  <name>hive.exec.scratchdir</name>
+  <value>/usr/hive/tmp</value>
+</property>
+
+<property>
+  <name>hive.querylog.location</name>
+  <value>/usr/hive/log</value>
+</property> 
+
 </configuration>
