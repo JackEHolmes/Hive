@@ -20,7 +20,7 @@ ubuntu-17.10
   
 * * *
 
-### Update Environment Variable and Permissions
+### Update Environment Variables and Permissions
  
       source /etc/profile.d/java.sh  
       source /etc/profile.d/hadoop.sh  
