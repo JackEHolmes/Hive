@@ -21,7 +21,7 @@ fi
 if [ -d "/usr/java" ]; then 
 echo "/usr/java  exists"
 else
-sudo mkdir /usr/java
+sudo mkdir -p /usr/java
 fi
 mv jdk-8u* jdk-1.8.0.tar.gz
 tar -zxvf jdk-1.8.0.tar.gz
@@ -40,7 +40,7 @@ fi
 if [ -d "/usr/hadoop" ]; then 
 echo "/usr/hadoop  exists"
 else
-sudo mkdir /usr/hadoop
+sudo mkdir -p /usr/hadoop
 fi
 sudo tar -zxvf hadoop-2.9.0.tar.gz -C /usr/hadoop/
 
@@ -58,17 +58,17 @@ fi
 if [ -d "/usr/hive" ]; then 
 echo "/usr/hive  exists"
 else
-sudo mkdir /usr/hive
+sudo mkdir -p /usr/hive
 fi
 tar -zxvf apache-hive-1.2.2-bin.tar.gz
 mv apache-hive-1.2.2-bin hive-1.2.2
 sudo mv hive-1.2.2 /usr/hive/
 
-sudo mkdir /usr/hive/warehouse
-sudo mkdir /usr/hive/tmp
-sudo mkdir /usr/hive/log
-echo $USER
 sudo chown $USER -R /usr/hive
 sudo chgrp $USER -R /usr/hive
+hdfs dfs -mkdir -p /usr/hive/warehouse
+hdfs dfs -mkdir -p /usr/hive/tmp
+hdfs dfs -mkdir -p /usr/hive/log
+hdfs dfs -chmod 777 /usr/hive/tmp
 
 echo "All Done!"
