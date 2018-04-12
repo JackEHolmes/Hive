@@ -1,20 +1,15 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 
 <configuration>
 <property>
   <name>hive.metastore.warehouse.dir</name>
-  <value>/user/hive_remote/warehouse</value>
-</property>
-
-<property>
-  <name>hive.metastore.local</name>
-  <value>true</value>
+  <value>/user/hive/warehouse</value>
 </property>
 
 <property>
   <name>javax.jdo.option.ConnectionURL</name>
-  <value>jdbc:mysql://localhost/hive_remote?createDatabaseIfNotExist=true</value>
+  <value>jdbc:mysql://localhost/hive?createDatabaseIfNotExist=true&amp;useSSL=false</value>
 </property>
 
 <property>
@@ -24,11 +19,11 @@
 
 <property>
   <name>javax.jdo.option.ConnectionUserName</name>
-  <value>hive</value>
+  <value>root</value>
 </property>
 
 <property>
   <name>javax.jdo.option.ConnectionPassword</name>
-  <value>password</value>
+  <value>1234</value>
 </property>
 </configuration>
