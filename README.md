@@ -20,12 +20,22 @@ ubuntu-17.10
   
 * * *
 
-### Update env
-   
-    source /etc/profile.d/java.sh  
-    source /etc/profile.d/hadoop.sh  
-    source /etc/profile.d/hive.sh  
-     
+### Update Env and Permissions
+ 
+      source /etc/profile.d/java.sh  
+      source /etc/profile.d/hadoop.sh  
+      source /etc/profile.d/hive.sh  
+      sudo chown $USER -R /usr/java
+      sudo chgrp $USER -R /usr/java
+      sudo chown $USER -R /usr/hive
+      sudo chgrp $USER -R /usr/hive
+      sudo chown $USER -R /usr/hadoop
+      sudo chgrp $USER -R /usr/hadoop
+      hdfs dfs -mkdir -p /usr/hive/warehouse
+      hdfs dfs -mkdir -p /usr/hive/tmp
+      hdfs dfs -mkdir -p /usr/hive/log
+      hdfs dfs -chmod 777 /usr/hive/tmp
+
 
 * * *
 ### Remove
