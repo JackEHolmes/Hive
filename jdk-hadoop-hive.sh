@@ -1,3 +1,7 @@
+sudo wget https://github.com/JackEHolmes/hive_install/raw/master/local_mysql/server/java.sh -P /etc/profile.d/  
+sudo wget https://github.com/JackEHolmes/hive_install/raw/master/local_mysql/server/hadoop.sh -P /etc/profile.d/  
+sudo wget https://github.com/JackEHolmes/hive_install/raw/master/local_mysql/server/hive.sh -P /etc/profile.d/  
+
 cd
 if [ -d "hive" ]; then
 echo "hive  exists"
@@ -63,10 +67,8 @@ sudo mv hive-1.2.2 /usr/hive/
 sudo mkdir /usr/hive/warehouse
 sudo mkdir /usr/hive/tmp
 sudo mkdir /usr/hive/log
+echo $USER
 sudo chown $USER -R /usr/hive
 sudo chgrp $USER -R /usr/hive
 
 echo "All Done!"
-echo $HIVE_HOME
-echo $JAVA_HOME
-echo $HADOOP_HOME
