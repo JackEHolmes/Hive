@@ -13,10 +13,6 @@ ubuntu-17.10
     sudo wget https://github.com/JackEHolmes/hive_install/raw/master/local_mysql/server/hadoop.sh -P /etc/profile.d/  
     sudo wget https://github.com/JackEHolmes/hive_install/raw/master/local_mysql/server/hive.sh -P /etc/profile.d/  
     
-    sudo source /etc/profile.d/java.sh  
-    sudo source /etc/profile.d/hadoop.sh  
-    sudo source /etc/profile.d/hive.sh  
-    
     wget https://github.com/JackEHolmes/hive_install/raw/master/jdk-hadoop-hive.sh  
     chmod +x jdk-hadoop-hive.sh  
     sudo ./jdk-hadoop-hive.sh  
@@ -24,11 +20,18 @@ ubuntu-17.10
     wget https://github.com/JackEHolmes/hive_install/raw/master/local_mysql/server/local_mysql_server.sh  
     chmod +x local_mysql_server.sh  
     sudo ./local_mysql_server.sh  
+    <br/> <br\>
 
 * * *
-
+### Update env
+   
+    source /etc/profile.d/java.sh  
+    source /etc/profile.d/hadoop.sh  
+    source /etc/profile.d/hive.sh  
+    
 ### Remove
      
     wget https://github.com/JackEHolmes/hive_install/raw/master/uninstall.sh  
     chmod +x uninstall.sh  
     sudo ./uninstall.sh   
+    <br />
