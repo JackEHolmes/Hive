@@ -1,6 +1,3 @@
-#uninstall
-sudo stop-all.sh
-
 #uninstall java
 sudo rm -rf /usr/java
 sudo rm /etc/profile.d/java.sh
