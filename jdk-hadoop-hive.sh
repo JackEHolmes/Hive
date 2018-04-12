@@ -19,9 +19,9 @@ sudo chmod u+x /etc/profile.d/java.sh
 sudo chmod u+x /etc/profile.d/hadoop.sh
 sudo chmod u+x /etc/profile.d/hive.sh
 
-sudo ./etc/profile.d/java.sh
-sudo ./etc/profile.d/hadoop.sh
-sudo ./etc/profile.d/hive.sh
+sudo /etc/profile.d/java.sh
+sudo /etc/profile.d/hadoop.sh
+sudo /etc/profile.d/hive.sh
 
 mv jdk-8u*tar.gz* jdk-1.8.0.tar.gz
 if [ -f "jdk-1.8.0.tar.gz" ]; then
