@@ -10,6 +10,6 @@ hive-2.X以上必须改Hive on Spark
 
 install
 
-wget https://github.com/JackEHolmes/hive_install/raw/master/jdk-hadoop-hive.sh
-chmod +x jdk-hadoop-hive.sh
-./jdk-hadoop-hive.sh
+wget https://github.com/JackEHolmes/hive_install/raw/master/jdk-hadoop-hive.sh  
+chmod +x jdk-hadoop-hive.sh  
+./jdk-hadoop-hive.sh  
