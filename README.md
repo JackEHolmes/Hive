@@ -7,6 +7,7 @@ ubuntu-17.10
 
 * * *
 
+
 ### Install and Config
 
     wget https://github.com/JackEHolmes/hive_install/raw/master/jdk-hadoop-hive.sh  
