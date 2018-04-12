@@ -27,8 +27,6 @@ mv jdk-8u* jdk-1.8.0.tar.gz
 tar -zxvf jdk-1.8.0.tar.gz
 sudo mv jdk1.8* $JAVA_HOME
 
-sudo chown $USER -R /usr/java
-sudo chgrp $USER -R /usr/java
 
 #hadoop-2.9.0
 export HIVE_HOME=/usr/hive/hive-1.2.2
@@ -45,8 +43,6 @@ fi
 sudo tar -zxvf hadoop-2.9.0.tar.gz -C /usr/hadoop/
 
 echo "export JAVA_HOME=/usr/java/jdk-1.8.0" >>/usr/hadoop/hadoop-2.9.0/etc/hadoop/hadoop-env.sh
-sudo chown $USER -R /usr/hadoop
-sudo chgrp $USER -R /usr/hadoop
 
 #hive-1.2.2
 export HIVE_HOME=/usr/hive/hive-1.2.2
@@ -63,12 +59,5 @@ fi
 tar -zxvf apache-hive-1.2.2-bin.tar.gz
 mv apache-hive-1.2.2-bin hive-1.2.2
 sudo mv hive-1.2.2 /usr/hive/
-
-sudo chown $USER -R /usr/hive
-sudo chgrp $USER -R /usr/hive
-hdfs dfs -mkdir -p /usr/hive/warehouse
-hdfs dfs -mkdir -p /usr/hive/tmp
-hdfs dfs -mkdir -p /usr/hive/log
-hdfs dfs -chmod 777 /usr/hive/tmp
 
 echo "All Done!"
