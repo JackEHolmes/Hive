@@ -1,0 +1,3 @@
+export HADOOP_HOME=/usr/hadoop/hadoop-2.9.0
+export PATH=${HADOOP_HOME}/bin:${HADOOP_HOME}/sbin:$PATH
+export HADOOP_CLASSPATH=.:$CLASSPATH:$HADOOP_CLASSPATH:$HADOOP_HOME/lib:$HADOOP_HOME/bin
