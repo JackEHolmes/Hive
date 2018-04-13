@@ -1,0 +1,22 @@
+<configuration>
+  <property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://localhost:9000</value>
+  </property>
+  <property>
+    <name>io.file.buffer.size</name>
+    <value>131072</value>
+  </property>
+  <property>
+    <name>hadoop.tmp.dir</name>
+    <value>file:/tmp/hadoop/</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hduser.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.hduser.groups</name>
+    <value>*</value>
+  </property>
+</configuration>
