@@ -25,7 +25,7 @@
 
 <property>
   <name>hive.metastore.warehouse.dir</name>
-  <value>/usr/hive/warehouse</value>
+  <value>/user/hive/warehouse</value>
 </property>
 
 <property>
@@ -35,7 +35,7 @@
 
 <property>
   <name>hive.querylog.location</name>
-  <value>/usr/hive/log</value>
+  <value>/user/hive/log</value>
 </property> 
 
 </configuration>
