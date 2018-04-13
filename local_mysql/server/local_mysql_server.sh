@@ -1,3 +1,11 @@
+cd ~
+if [ -d "hive" ]; then
+echo "hive  exists"
+else
+mkdir hive
+fi
+cd hive
+
 export HIVE_HOME=/usr/hive/hive-1.2.2
 if [ -f "mysql-connector-java-5.1.46.tar.gz" ]; then
 echo "mysql-connector-java-5.1.46.tar.gz  exists"
