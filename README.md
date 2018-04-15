@@ -31,12 +31,16 @@ ubuntu-17.10
       sudo chgrp $USER -R /usr/hive
       sudo chown $USER -R /usr/hadoop
       sudo chgrp $USER -R /usr/hadoop
-      sudo mkdir -p /opt/data/tmp
-      sudo chown $USER -R /opt/data/tmp
-      sudo chgrp $USER -R /opt/data/tmp
-      start-all.sh
-      hadoop namenode -format
-      sudo chown $USER -R hive-site.xml
+      sudo mkdir -p /usr/hadoop/tmp
+      sudo chown $USER -R /usr/hadoop/tmp
+      sudo chgrp $USER -R /usr/hadoop/tmp
+      hdfs namenode -format
+      hadoop-daemon.sh start namenode
+      hadoop-daemon.sh start datanode
+      hadoop-daemon.sh start secondarynamenode
+      yarn-daemon.sh start resourcemanager
+      yarn-daemon.sh start nodemanager
+      sudo chown $USER -R hive-site.xml
       sudo chgrp $USER -R hive-site.xml
       sudo chown $USER -R hive-default.xml
       sudo chgrp $USER -R hive-default.xml
