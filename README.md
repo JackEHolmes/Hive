@@ -31,6 +31,14 @@ ubuntu-17.10
       sudo chgrp $USER -R /usr/hive
       sudo chown $USER -R /usr/hadoop
       sudo chgrp $USER -R /usr/hadoop
+      start-all.sh
+      hadoop namenode -format
+      sudo chown $USER -R hive-site.xml
+      sudo chgrp $USER -R hive-site.xml     
+      sudo chown $USER -R hive-default.xml
+      sudo chgrp $USER -R hive-default.xml     
+      sudo chown $USER -R hive-env.sh
+      sudo chgrp $USER -R hive-env.sh 
       hdfs dfs -mkdir -p /user/hive/warehouse
       hdfs dfs -mkdir -p /user/hive/log
       hdfs dfs -mkdir -p /usr/hive/tmp
