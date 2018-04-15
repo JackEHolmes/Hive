@@ -31,9 +31,6 @@ ubuntu-17.10
       sudo chgrp $USER -R /usr/hive
       sudo chown $USER -R /usr/hadoop
       sudo chgrp $USER -R /usr/hadoop
-      sudo mkdir /user
-      sudo chown $USER -R /user
-      sudo chgrp $USER -R /user
       hdfs dfs -mkdir -p /user/hive/warehouse
       hdfs dfs -mkdir -p /user/hive/log
       hdfs dfs -mkdir -p /usr/hive/tmp
