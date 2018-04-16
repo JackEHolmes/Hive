@@ -7,7 +7,7 @@ fi
 cd hive
 
 #jdk-1.8.0_162
-sudo wget https://github.com/JackEHolmes/hive_install/raw/master/local_mysql/server/java.sh -P /etc/profile.d/ 
+sudo wget https://github.com/JackEHolmes/hive_install/raw/master/Pseudo_distributed/java.sh -P /etc/profile.d/ 
 export JAVA_HOME=/usr/java/jdk-1.8.0
 mv jdk-8u*tar.gz* jdk-1.8.0.tar.gz
 if [ -f "jdk-1.8.0.tar.gz" ]; then
@@ -26,7 +26,7 @@ sudo mv jdk1.8* $JAVA_HOME
 
 
 #hadoop-2.9.0
-sudo wget https://github.com/JackEHolmes/hive_install/raw/master/local_mysql/server/hadoop.sh -P /etc/profile.d/ 
+sudo wget https://github.com/JackEHolmes/hive_install/raw/master/Pseudo_distributed/hadoop.sh -P /etc/profile.d/ 
 export HIVE_HOME=/usr/hive/hive-1.2.2
 if [ -f "hadoop-2.9.0.tar.gz" ]; then 
 echo "hadoop-2.9.0.tar.gz  exists"
@@ -43,7 +43,7 @@ sudo tar -zxvf hadoop-2.9.0.tar.gz -C /usr/hadoop/
 echo "export JAVA_HOME=/usr/java/jdk-1.8.0" >>/usr/hadoop/hadoop-2.9.0/etc/hadoop/hadoop-env.sh
 
 #hive-1.2.2
-sudo wget https://github.com/JackEHolmes/hive_install/raw/master/local_mysql/server/hive.sh -P /etc/profile.d/  
+sudo wget https://github.com/JackEHolmes/hive_install/raw/master/Pseudo_distributed/hive.sh -P /etc/profile.d/  
 export HIVE_HOME=/usr/hive/hive-1.2.2
 if [ -f "apache-hive-1.2.2-bin.tar.gz" ]; then 
 echo "apache-hive-1.2.2-bin.tar.gz  exists"
