@@ -1,3 +1,4 @@
+hdfs dfsadmin -safemode leave
 hdfs dfs -rm -r /wc/ouput
 echo -e 'hadoop mapreduce hive\nhbase spark storm\nsqoop hadoop hive\nspark hadoop'>input.txt
 hdfs dfs -mkdir /wc
