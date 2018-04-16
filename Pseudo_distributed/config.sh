@@ -18,8 +18,6 @@ rm -rf mysql-connector-java-5.1.46
 sudo wget https://github.com/JackEHolmes/hive_install/raw/master/Pseudo_distributed/hive-site.xml -P $HIVE_HOME/conf/
 sudo cp $HIVE_HOME/conf/hive-default.xml.template $HIVE_HOME/conf/hive-default.xml
 sudo cp $HIVE_HOME/conf/hive-env.sh.template $HIVE_HOME/conf/hive-env.sh
-sudo ln -s /usr/hadoop/hadoop-2.9.0/sbin/start-dfs.sh /etc/rc3.d/S07start-dfs.sh
-sudo ln -s /usr/hadoop/hadoop-2.9.0/sbin/start-yarn.sh /etc/rc3.d/S07start-yarn.sh
 sudo wget https://github.com/JackEHolmes/hive_install/raw/master/Pseudo_distributed/core-site.xml -P $HADOOP_HOME/etc/hadoop/
 sudo wget https://github.com/JackEHolmes/hive_install/raw/master/Pseudo_distributed/hdfs-site.xml -P $HADOOP_HOME/etc/hadoop/
 sudo wget https://github.com/JackEHolmes/hive_install/raw/master/Pseudo_distributed/mapred-site.xml -P $HADOOP_HOME/etc/hadoop/
