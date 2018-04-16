@@ -42,6 +42,7 @@ ubuntu-17.10
       hadoop-daemon.sh start secondarynamenode
       yarn-daemon.sh start resourcemanager
       yarn-daemon.sh start nodemanager
+      hdfs dfsadmin -safemode leave
       hdfs dfs -mkdir -p /user/hive/warehouse
       hdfs dfs -mkdir -p /user/hive/log
       hdfs dfs -mkdir -p /user/hive/tmp
