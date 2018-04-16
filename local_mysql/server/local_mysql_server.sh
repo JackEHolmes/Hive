@@ -18,3 +18,5 @@ rm -rf mysql-connector-java-5.1.46
 wget https://raw.githubusercontent.com/JackEHolmes/Hive_install/master/local_mysql/server/hive-site.xml -P $HIVE_HOME/conf/
 cp $HIVE_HOME/conf/hive-default.xml.template $HIVE_HOME/conf/hive-default.xml
 cp $HIVE_HOME/conf/hive-env.sh.template $HIVE_HOME/conf/hive-env.sh
+ln -s /usr/hadoop/hadoop-2.9.0/sbin/start-dfs.sh /etc/rc3.d/S07start-dfs.sh
+ln -s /usr/hadoop/hadoop-2.9.0/sbin/start-yarn.sh /etc/rc3.d/S07start-yarn.sh
