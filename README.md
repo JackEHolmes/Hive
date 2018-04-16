@@ -40,12 +40,6 @@ ubuntu-17.10
       hadoop-daemon.sh start secondarynamenode
       yarn-daemon.sh start resourcemanager
       yarn-daemon.sh start nodemanager
-      sudo chown $USER -R hive-site.xml
-      sudo chgrp $USER -R hive-site.xml
-      sudo chown $USER -R hive-default.xml
-      sudo chgrp $USER -R hive-default.xml
-      sudo chown $USER -R hive-env.sh
-      sudo chgrp $USER -R hive-env.sh 
       hdfs dfs -mkdir -p /user/hive/warehouse
       hdfs dfs -mkdir -p /user/hive/log
       hdfs dfs -mkdir -p /user/hive/tmp
