@@ -15,9 +15,7 @@ ubuntu-17.10
     chmod +x jdk-hadoop-hive.sh  
     sudo ./jdk-hadoop-hive.sh 
     
-    source /etc/profile.d/java.sh  
-    source /etc/profile.d/hadoop.sh  
-    source /etc/profile.d/hive.sh 
+
 
     wget https://github.com/JackEHolmes/hive_install/raw/master/Pseudo_distributed/config.sh  
     chmod +x config.sh  
@@ -27,7 +25,10 @@ ubuntu-17.10
 * * *
 
 ### Update Environment Variables and Permissions
-
+      
+      source /etc/profile.d/java.sh  
+      source /etc/profile.d/hadoop.sh  
+      source /etc/profile.d/hive.sh 
       sudo chown $USER -R /usr/java
       sudo chgrp $USER -R /usr/java
       sudo chown $USER -R /usr/hive
