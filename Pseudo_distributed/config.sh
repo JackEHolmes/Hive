@@ -5,7 +5,8 @@ else
 mkdir hive
 fi
 cd hive
-
+export JAVA_HOME=/usr/java/jdk-1.8.0
+export HADOOP_HOME=/usr/hadoop/hadoop-2.9.0
 export HIVE_HOME=/usr/hive/hive-1.2.2
 if [ -f "mysql-connector-java-5.1.46.tar.gz" ]; then
 echo "mysql-connector-java-5.1.46.tar.gz  exists"
