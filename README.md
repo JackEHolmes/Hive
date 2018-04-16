@@ -15,8 +15,6 @@ ubuntu-17.10
     chmod +x jdk-hadoop-hive.sh  
     sudo ./jdk-hadoop-hive.sh 
     
-
-
     wget https://github.com/JackEHolmes/hive_install/raw/master/Pseudo_distributed/config.sh  
     chmod +x config.sh  
     sudo ./config.sh  
