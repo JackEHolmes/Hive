@@ -21,6 +21,7 @@ ubuntu-17.10
 * * *
 
 ### Update Environment Variables and Permissions
+      sudo su $USER
  
       source /etc/profile.d/java.sh  
       source /etc/profile.d/hadoop.sh  
