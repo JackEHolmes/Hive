@@ -5,7 +5,6 @@
 <name>mapreduce.framework.name</name>
 <value>yarn</value>
 </property>
-</configuration>
 <property>
 　　<name>mapreduce.map.memory.mb</name>
 　　<value>1536</value>
@@ -22,3 +21,4 @@
 　　<name>mapreduce.reduce.java.opts</name>
 　　<value>-Xmx2560M</value>
 </property>
+</configuration>
