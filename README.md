@@ -24,6 +24,8 @@ ubuntu-17.10
 
 ### Update Environment Variables and Permissions
       
+      echo -e "alias hs=\"hdfs dfs\"" >> /home/$USER/.bashrc
+      source /home/$USER/.bashrc
       source /etc/profile.d/java.sh  
       source /etc/profile.d/hadoop.sh  
       source /etc/profile.d/hive.sh 
