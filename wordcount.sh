@@ -6,3 +6,4 @@ hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.9.0.j
 hdfs dfs -cat /wc/ouput/*
 
 hdfs dfs -rm -r /wc
+rm input.txt
