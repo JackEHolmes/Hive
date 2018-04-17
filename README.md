@@ -38,12 +38,9 @@ ubuntu-17.10
       sudo chown $USER -R /usr/hadoop/tmp
       sudo chgrp $USER -R /usr/hadoop/tmp
       hdfs namenode -format
-      hadoop-daemon.sh start namenode
-      hadoop-daemon.sh start datanode
-      hadoop-daemon.sh start secondarynamenode
-      yarn-daemon.sh start resourcemanager
-      yarn-daemon.sh start nodemanager
-      hdfs dfsadmin -safemode leave
+      start-dfs.sh
+      start-yarn.sh
+      hdfs dfsadmin -safemode leave
       hdfs dfs -mkdir -p /user/hive/warehouse
       hdfs dfs -mkdir -p /user/hive/log
       hdfs dfs -mkdir -p /user/hive/tmp
