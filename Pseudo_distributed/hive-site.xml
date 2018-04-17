@@ -30,7 +30,7 @@
 
 <property>
   <name>hive.exec.scratchdir</name>
-  <value>/usr/hive/tmp</value>
+  <value>/user/hive/tmp</value>
 </property>
 
 <property>
