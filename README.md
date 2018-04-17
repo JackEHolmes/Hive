@@ -23,6 +23,7 @@ ubuntu-17.10
 * * *
 
 ### Update Environment Variables and Permissions
+      sudo apt install mysql-server
       
       source /etc/profile.d/java.sh  
       source /etc/profile.d/hadoop.sh  
