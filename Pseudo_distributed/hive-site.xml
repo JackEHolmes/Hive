@@ -38,4 +38,9 @@
   <value>/user/hive/log</value>
 </property> 
 
+<property>
+  <name>hive.exec.mode.local.auto</name>
+  <value>true</value>
+</property> 
+  
 </configuration>
