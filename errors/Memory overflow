@@ -1,0 +1,8 @@
+sudo dd if=/dev/zero of=/swap bs=1024 count=1024000
+sudo mkswap /swap
+sudo swapon /swap
+
+sudo swapoff /swap
+sudo rm -rf /swap
+
+echo "/swap swap swap defaults 0 0" >>/etc/fstab
