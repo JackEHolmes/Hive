@@ -28,4 +28,4 @@ sudo wget https://github.com/JackEHolmes/hive_install/raw/master/Pseudo_distribu
 sudo wget https://github.com/JackEHolmes/hive_install/raw/master/Pseudo_distributed/hdfs-site.xml -P $HADOOP_HOME/etc/hadoop/
 sudo wget https://github.com/JackEHolmes/hive_install/raw/master/Pseudo_distributed/mapred-site.xml -P $HADOOP_HOME/etc/hadoop/
 sudo wget https://github.com/JackEHolmes/hive_install/raw/master/Pseudo_distributed/yarn-site.xml -P $HADOOP_HOME/etc/hadoop/
-
+wget https://github.com/JackEHolmes/hive_install/raw/master/Pseudo_distributed/.hiverc -P ~/
