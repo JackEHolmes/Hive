@@ -22,7 +22,7 @@
 * * *
 
 ### Update Environment Variables and Permissions
-      sudo apt install mysql-server
+      sudo apt install mysql-server -y
 
       source /etc/profile.d/java.sh  
       source /etc/profile.d/hadoop.sh  
