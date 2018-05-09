@@ -13,7 +13,7 @@
   
 <property>  
 <name>yarn.resourcemanager.webapp.address</name>
-<value>192.168.0.108:8088</value>  
+<value>0.0.0.0:8088</value>  
  </property>
   
 <property>
