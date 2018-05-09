@@ -43,9 +43,8 @@
       sudo mkdir -p /usr/hadoop/tmp
       sudo chown $USER -R /usr/hadoop/tmp
       sudo chgrp $USER -R /usr/hadoop/tmp
-      
       hdfs namenode -format
-      echo 'yes\nyes\n' | start-dfs.sh
+      echo 'yes\nyes\n' | start-dfs.sh
       start-yarn.sh
       hdfs dfsadmin -safemode leave
       hdfs dfs -mkdir -p /user/hive/warehouse
