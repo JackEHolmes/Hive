@@ -23,7 +23,13 @@
 
 ### Update Environment Variables and Permissions
       sudo apt install mysql-server -y
-      mysql -uroot -p -e "create database hive;create user hive@'localhost' identified by "1234";GRANT ALL PRIVILEGES ON hive.* TO 'hive'@'localhost';FLUSH PRIVILEGES;exit;"
+      mysql -uroot -p
+      
+      create database hive;
+      create user hive@'localhost' identified by "1234";
+      GRANT ALL PRIVILEGES ON hive.* TO 'hive'@'localhost';
+      FLUSH PRIVILEGES;
+      exit;
 
       source /etc/profile.d/java.sh  
       source /etc/profile.d/hadoop.sh  
@@ -37,10 +43,11 @@
       sudo mkdir -p /usr/hadoop/tmp
       sudo chown $USER -R /usr/hadoop/tmp
       sudo chgrp $USER -R /usr/hadoop/tmp
-      hdfs dfsadmin -safemode leave
+      
       hdfs namenode -format
-      echo 'yes\n' | start-dfs.sh
-      echo 'yes\n' | start-yarn.sh
+      echo 'yes\nyes\n' | start-dfs.sh
+      start-yarn.sh
+      hdfs dfsadmin -safemode leave
       hdfs dfs -mkdir -p /user/hive/warehouse
       hdfs dfs -mkdir -p /user/hive/log
       hdfs dfs -mkdir -p /user/hive/tmp
