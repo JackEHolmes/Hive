@@ -55,28 +55,6 @@
       source /home/$USER/.bashrc
 
 * * *
-### Startup
-      
-      echo '#!/bin/sh
-      ### BEGIN INIT INFO
-      # Provides:          start-hadoop.sh
-      # Required-Start:      $all
-      # Required-Stop:
-      # Default-Start:      2 3 4 5
-      # Default-Stop:
-      # Short-Description: Run /etc/init.d/start-hadoop.sh if it exist
-      ### END INIT INFO
-      su - $USER start-dfs.sh
-      su - $USER start-yarn.sh
-      su - $USER -c "screen -dmS hive hive"
-      '| sudo tee /etc/init.d/start-hadoop.sh
-      sudo chmod 755 /etc/init.d/start-hadoop.sh
-      sudo ln -s  /etc/init.d/start-hadoop.sh /etc/rc3.d/S90start-hadoop
-      sudo update-rc.d start-hadoop.sh defaults 90
-
-
-
-* * *
 ### Remove
      
       wget https://github.com/JackEHolmes/hive_install/raw/master/uninstall.sh  
