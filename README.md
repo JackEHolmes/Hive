@@ -43,8 +43,8 @@
       sudo chown $USER -R /usr/hadoop/tmp
       sudo chgrp $USER -R /usr/hadoop/tmp
       hdfs namenode -format
-      start-dfs.sh
-      start-yarn.sh
+      echo 'yes\n' | start-dfs.sh
+      echo 'yes\n' | start-yarn.sh
       hdfs dfsadmin -safemode leave
       hdfs dfs -mkdir -p /user/hive/warehouse
       hdfs dfs -mkdir -p /user/hive/log
