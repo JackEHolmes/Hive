@@ -37,10 +37,10 @@
       sudo mkdir -p /usr/hadoop/tmp
       sudo chown $USER -R /usr/hadoop/tmp
       sudo chgrp $USER -R /usr/hadoop/tmp
+      hdfs dfsadmin -safemode leave
       hdfs namenode -format
       echo 'yes\n' | start-dfs.sh
       echo 'yes\n' | start-yarn.sh
-      hdfs dfsadmin -safemode leave
       hdfs dfs -mkdir -p /user/hive/warehouse
       hdfs dfs -mkdir -p /user/hive/log
       hdfs dfs -mkdir -p /user/hive/tmp
