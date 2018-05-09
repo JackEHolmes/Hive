@@ -10,8 +10,6 @@
 
 ### Install and Config
 
-      sudo su $USER
-
       wget https://github.com/JackEHolmes/hive_install/raw/master/jdk-hadoop-hive.sh
       chmod +x jdk-hadoop-hive.sh  
       sudo ./jdk-hadoop-hive.sh 
