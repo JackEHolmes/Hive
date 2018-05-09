@@ -23,12 +23,7 @@
 
 ### Update Environment Variables and Permissions
       sudo apt install mysql-server -y
-      mysql -uroot -p
-      create database hive;
-      create user hive@'localhost' identified by "1234"
-      GRANT ALL PRIVILEGES ON hive.* TO 'hive'@'localhost';
-      FLUSH PRIVILEGES;
-      exit;
+      mysql -uroot -p -e"create database hive;create user hive@'localhost' identified by "1234";GRANT ALL PRIVILEGES ON hive.* TO 'hive'@'localhost';FLUSH PRIVILEGES;exit;"
 
       source /etc/profile.d/java.sh  
       source /etc/profile.d/hadoop.sh  
