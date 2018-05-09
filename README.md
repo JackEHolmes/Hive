@@ -71,7 +71,7 @@
       su - $USER start-dfs.sh
       su - $USER start-yarn.sh
       su - $USER -c "screen -dmS hive hive"
-      EOF
+EOF
       sudo chmod 755 /etc/init.d/start-hadoop.sh
       sudo ln -s  /etc/init.d/start-hadoop.sh /etc/rc3.d/S90start-hadoop
       sudo update-rc.d start-hadoop.sh defaults 90
