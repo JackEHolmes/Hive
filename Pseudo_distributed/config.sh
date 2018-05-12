@@ -20,6 +20,7 @@ sudo rm $HIVE_HOME/conf/hive-site.xml
 sudo wget https://github.com/JackEHolmes/hive_install/raw/master/Pseudo_distributed/hive-site.xml -P $HIVE_HOME/conf/
 sudo cp $HIVE_HOME/conf/hive-default.xml.template $HIVE_HOME/conf/hive-default.xml
 sudo cp $HIVE_HOME/conf/hive-env.sh.template $HIVE_HOME/conf/hive-env.sh
+sudo cp $HIVE_HOME/conf/hive-exec-log4j.properties.template $HIVE_HOME/conf/hive-exec-log4j.properties
 sudo rm $HADOOP_HOME/etc/hadoop/core-site.xml
 sudo rm $HADOOP_HOME/etc/hadoop/hdfs-site.xml
 sudo rm $HADOOP_HOME/etc/hadoop/mapred-site.xml
