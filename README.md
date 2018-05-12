@@ -22,7 +22,7 @@
 * * *
 
 ### Update Environment Variables and Permissions
-      sudo apt install mysql-server -y
+      sudo apt install mysql-server
       mysql -uroot -p
       
       create database hive;
